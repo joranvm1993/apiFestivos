@@ -9,7 +9,5 @@ import apifestivos.apifestivos.entidades.Festivo;
 @Service
 public interface IFestivoServicio {
 
-    public Festivo obtener(Integer id);
-    
     public List<Festivo> listar();
 } 

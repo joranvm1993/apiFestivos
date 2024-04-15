@@ -7,7 +7,7 @@ import apifestivos.apifestivos.entidades.Festivo;
 /**
  * IFestivoRespositorio
  */
-public interface IFestivoRespositorio extends JpaRepository<Festivo, Integer> {
+public interface IFestivoRepositorio extends JpaRepository<Festivo, Integer> {
 
     
 }

@@ -1,12 +1,11 @@
 package apifestivos.apifestivos.entidades;
 
-import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.JoinColumn;
-import jakarta.persistence.OneToOne;
+import jakarta.persistence.ManyToOne;
 import jakarta.persistence.Table;
 
 @Entity
@@ -15,22 +14,22 @@ public class Festivo {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "Id")
+    //@Column(name = "Id")
     private long id;
     
-    @Column(name = "Nombre")
+    //@Column(name = "Nombre")
     private String nombre;
 
-    @Column(name = "Dia")
+    //@Column(name = "Dia")
     private int dia;
 
-    @Column(name = "Mes")
+    //@Column(name = "Mes")
     private int mes;
 
-    @Column(name = "DiasPascua")
+    //@Column(name = "DiasPascua")
     private int diasPascua;
 
-    @OneToOne
+    @ManyToOne
     @JoinColumn(name = "IdTipo", referencedColumnName = "Id")
     private Tipo tipo;
 
